@@ -1,1 +1,3 @@
 # GirlPoweredFramework
+
+WIP Clawbot framework
