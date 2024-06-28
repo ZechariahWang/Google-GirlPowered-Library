@@ -12,6 +12,8 @@ using namespace GirlPowered;
 
 std::vector<pros::Motor> chassis_left_motors;
 std::vector<pros::Motor> chassis_right_motors;
+std::vector<pros::Motor> arm_motors;
+std::vector<pros::Motor> claw_motors;
 
 bool is_reversed(int value){
   if (value < 0){ return true; }

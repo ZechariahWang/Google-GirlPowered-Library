@@ -9,4 +9,8 @@ pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
 Utility util;
 DriverController driver;
+MovementPID forward;
+RotationPID rotate;
+ArmController arm;
+ClawController claw;
 

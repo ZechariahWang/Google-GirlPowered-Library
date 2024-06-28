@@ -80,23 +80,22 @@ double GirlPowered::PID::compute_pid(double current, double target){
  * @param target target of reference motor
  */
 
-void GirlPowered::PID::set_pid(double target){
+void GirlPowered::PID::set_pid(pros::Motor &reference_motor, double target, double max_speed){
   this->reset_values();
+  this->max_speed = max_speed;
+  reference_motor.set_zero_position(0);
   while (true){
-    double currentPos = chassis_left_motors.at(0).get_position();
+    double currentPos = reference_motor.get_position();
     double vol = this->compute_pid(currentPos, target);
-    chassis_left_motors.at(0).move_voltage(vol);
-    chassis_right_motors.at(0).move_voltage(vol);
+    reference_motor.move_voltage(vol * (12000.0 / 127));
     if (fabs(this->error) < this->main_threshold) { this->iterator++; } else { this->iterator = 0;}
     if (fabs(this->iterator) >= this->main_tolerance){
-      chassis_left_motors.at(0).move_voltage(0);
-      chassis_right_motors.at(0).move_voltage(0);
+      reference_motor.move_voltage(0);
       break;
     }
     if (fabs(this->derivative) < this->failsafe_threshhold) {this->failsafe++;}
     if (this->failsafe > this->failsafe_tolerance){
-      chassis_left_motors.at(0).move_voltage(0);
-      chassis_right_motors.at(0).move_voltage(0);
+      reference_motor.move_voltage(0);
       break;
     }
     pros::delay(10);

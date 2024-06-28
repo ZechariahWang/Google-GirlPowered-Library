@@ -27,6 +27,6 @@ namespace GirlPowered {
             PID(double kp, double ki, double kd, double threshold, double tolerance, double failsafe_threshhold, double failsafe_tolerance, double max_speed);
             void reset_values();
             double compute_pid(double current, double target);
-            void set_pid(double target);
+            void set_pid(pros::Motor &reference_motor, double target, double max_speed);
     };
 }
