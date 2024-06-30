@@ -84,7 +84,6 @@ void opcontrol(void);
 #include "GirlPoweredLib/AutonomousControls/ArmModule.hpp"
 #include "GirlPoweredLib/AutonomousControls/ClawModule.hpp"
 #include "GirlPoweredLib/Misc/Globals.hpp"
-#include "GirlPoweredLib/AutonomousControls/PIDModule.hpp"
 #include "GirlPoweredLib/Scripts/AutonScript.hpp"
 //#include <iostream>
 #endif

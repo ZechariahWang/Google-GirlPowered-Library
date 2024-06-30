@@ -3,9 +3,7 @@
 #pragma once
 #include "main.h"
 
-namespace GirlPowered {
-    class Scripts {
-        public:
-            int init;
-    };
-}
+void MoveForwardsAndBackwards();
+void Turn90DegreesAndBack();
+void OpenAndCloseClaw();
+void MoveArmUpAndDown();

@@ -1,9 +1,9 @@
 /**
  * @file AssetDirectoryConfig.cpp
  * @author Zechariah Wang
- * @brief Drivetrain config driver
- * @version 0.1
- * @date 2024-04-05
+ * @brief Assigns motors to their designated subsystem. You can edit these ports in main.cpp
+ * @brief You do not need to edit these functions
+ * 
  */
 
 #include "main.h"

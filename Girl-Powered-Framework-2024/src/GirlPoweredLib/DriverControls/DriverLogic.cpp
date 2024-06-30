@@ -1,3 +1,11 @@
+/**
+ * @file ArmModule.cpp
+ * @author Zechariah Wang
+ * @brief Controls the driver logic of the robot.
+ * @brief You do not need to edit these functions.
+ * 
+ */
+
 #include "main.h"
 
 using namespace GirlPowered;
@@ -10,8 +18,8 @@ void GirlPowered::DriverController::drivetrain_controller() {
     if(fabs(leftYjoystick) < 10) leftYjoystick = 0;
     if(fabs(rightYjoystick) < 10) rightYjoystick = 0;
 
-    int32_t left = (rightXjoystick + leftYjoystick) * (12000.0 / 127);
-    int32_t right = (leftYjoystick - rightXjoystick) * (12000.0 / 127);
+    double left = (rightXjoystick + leftYjoystick) * (12000.0 / 127);
+    double right = (leftYjoystick - rightXjoystick) * (12000.0 / 127);
     util.move_left_motors(left);
     util.move_right_motors(right);
 }

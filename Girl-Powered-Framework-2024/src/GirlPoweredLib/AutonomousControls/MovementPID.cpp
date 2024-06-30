@@ -1,3 +1,11 @@
+/**
+ * @file MovementPID.cpp
+ * @author Zechariah Wang
+ * @brief Controls moving forward and backward for the robot during the autonomous phase
+ * @brief You do not need to edit these functions
+ * 
+ */
+
 #include "main.h"
 
 using namespace GirlPowered;

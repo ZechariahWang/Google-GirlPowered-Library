@@ -1,3 +1,11 @@
+/**
+ * @file Utility.cpp
+ * @author Zechariah Wang
+ * @brief Provides utility functions for the rest of the robot to use. Saves repetitive tasks.
+ * @brief You do not need to edit these functions
+ * 
+ */
+
 #include "main.h"
 
 int GirlPowered::Utility::sgn(double num){ return (num < 0) ? -1 : ((num > 0) ? 1 : 0); }
@@ -27,11 +35,6 @@ void GirlPowered::Utility::move_claw_motors(double voltage){
 }
 
 double GirlPowered::Utility::get_encoder_position() {
-  double left_values = 0;
-  double right_values = 0;
-  int left_num = 0; // number of motors
-  int right_num = 0; // number of motors
-
   double left_pos = chassis_left_motors.at(0).get_position();
   double right_pos = chassis_right_motors.at(0).get_position();
 

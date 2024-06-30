@@ -1,3 +1,11 @@
+/**
+ * @file ClawModule.cpp
+ * @author Zechariah Wang
+ * @brief Controls the claw of the robot during the autonomous phase.
+ * @brief You do not need to edit these functions.
+ * 
+ */
+
 #include "main.h"
 
 using namespace GirlPowered;
