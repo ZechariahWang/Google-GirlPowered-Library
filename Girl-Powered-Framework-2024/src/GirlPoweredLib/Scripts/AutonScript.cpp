@@ -14,8 +14,8 @@
  */
 
 void MoveForwardsAndBackwards() {
-    forward.move(48, 40); // First number is the distance in inches, second number is the speed from -127 to 127.
-    forward.move(-48, 40); // First number is the distance in inches, second number is the speed from -127 to 127.
+    forward.move(24, 40); // First number is the distance in inches, second number is the speed from 0 to 127.
+    forward.move(-24, 40); // First number is the distance in inches, second number is the speed from 0 to 127.
 }
 
 /**
@@ -24,8 +24,8 @@ void MoveForwardsAndBackwards() {
  */
 
 void Turn90DegreesAndBack() {
-    rotate.turn(90, 40); // First number is the amount in degrees, second number is the speed from -127 to 127.
-	rotate.turn(-90, 40); // First number is the amount in degrees, second number is the speed from -127 to 127.
+    rotate.turn(90, 40); // First number is the amount in degrees, second number is the speed from 0 to 127.
+	rotate.turn(-90, 40); // First number is the amount in degrees, second number is the speed from 0 to 127.
 }
 
 /**

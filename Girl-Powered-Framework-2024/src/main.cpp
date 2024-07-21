@@ -16,7 +16,7 @@ GirlPowered::AssetConfig config(
 	 * 
 	 */
 
-	{20},   
+	{17},   
 
 	/**
 	 * @brief Ports for the right side of the clawbot. Enter the number the wire is connected to.
@@ -24,7 +24,7 @@ GirlPowered::AssetConfig config(
 	 * 
 	 */ 
 
-	{-12},   
+	{-11},   
 
 	/**
 	 * @brief Port for the arm of the clawbot. Enter the number the wire is connected to.
@@ -32,7 +32,7 @@ GirlPowered::AssetConfig config(
 	 * 
 	 */     
 
-	{-11},  
+	{-1},  
 
 	/**
 	 * @brief Ports for the claw of the clawbot. Enter the number the wire is connected to.
@@ -101,14 +101,16 @@ void competition_initialize() {}
 
 /**
  * @brief Paste your autonomous code into here!
- * @brief If you don't know what to put here, check out the scripts folder for reference commands.
+ * @brief If you don't know what to put here, check out the scripts folder on the left for reference commands.
  */ 
 
 void autonomous() {
-	MoveForwardsAndBackwards();
-	Turn90DegreesAndBack();
-	OpenAndCloseClaw();
-	MoveArmUpAndDown();
+	forward.move(24, 40);
+	claw.move_claw(60, 1, GirlPowered::ClawController::direction::OPEN); 
+	arm.move_arm(60, 1, GirlPowered::ArmController::direction::UP);
+	rotate.turn(-90, 40);
+	arm.move_arm(60, 1, GirlPowered::ArmController::direction::DOWN);
+	claw.move_claw(60, 1, GirlPowered::ClawController::direction::CLOSE); 
 }
 
 /**
