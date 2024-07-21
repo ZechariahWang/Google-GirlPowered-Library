@@ -1,6 +1,5 @@
 /**
  * @file main.cpp
- * @author Zechariah Wang
  * @brief The main driver code for the rest of the robot!
  * 
  */
@@ -85,10 +84,10 @@ void competition_initialize() {}
 
 /**
  * @brief FUNCTION REFERENCES. IF YOU ARE STILL CONFUSED ON HOW THESE WORK, GO INTO THE SCRIPTS FOLDER AND CLICK ON AutonScripts.cpp 
- * forward.move(AMOUNT IN INCHES, SPEED FROM -127 TO 127);
- * rotate.turn(AMOUNT IN DEGREES, SPEED FROM -127 TO 127);
- * arm.move_arm(SPEED FROM -127 TO 127, TIME IN SECONDS, DIRECTION OF ARM (SEE ENUM LIST BELOW));
- * claw.move_claw(SPEED FROM -127 TO 127, TIME IN SECONDS, DIRECTION OF CLAW (SEE ENUM LIST BELOW));
+ * forward.move(AMOUNT IN INCHES, SPEED FROM 0 TO 127);
+ * rotate.turn(AMOUNT IN DEGREES, SPEED FROM 0 TO 127);
+ * arm.move_arm(SPEED FROM 0 TO 127, TIME IN SECONDS, DIRECTION OF ARM (SEE ENUM LIST BELOW));
+ * claw.move_claw(SPEED FROM 0 TO 127, TIME IN SECONDS, DIRECTION OF CLAW (SEE ENUM LIST BELOW));
  */ 
 
 /**
@@ -106,11 +105,11 @@ void competition_initialize() {}
 
 void autonomous() {
 	forward.move(24, 40);
-	claw.move_claw(60, 1, GirlPowered::ClawController::direction::OPEN); 
-	arm.move_arm(60, 1, GirlPowered::ArmController::direction::UP);
 	rotate.turn(-90, 40);
-	arm.move_arm(60, 1, GirlPowered::ArmController::direction::DOWN);
+	claw.move_claw(60, 1, GirlPowered::ClawController::direction::OPEN); 
 	claw.move_claw(60, 1, GirlPowered::ClawController::direction::CLOSE); 
+	arm.move_arm(60, 1, GirlPowered::ArmController::direction::UP);
+	arm.move_arm(60, 1, GirlPowered::ArmController::direction::DOWN);
 }
 
 /**

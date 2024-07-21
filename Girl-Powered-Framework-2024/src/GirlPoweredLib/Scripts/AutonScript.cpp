@@ -1,6 +1,5 @@
 /**
  * @file AutonScript.cpp
- * @author Zechariah Wang
  * @brief Reference functions to help you understand how to use the autonomous functions
  * 
  */
