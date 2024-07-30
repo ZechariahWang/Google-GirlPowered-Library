@@ -14,15 +14,17 @@ void ArmController::move_arm(double speed, double time, direction dir) {
     switch (dir) {
         case direction::UP:
             std::cout << "Moving arm up." << std::endl;
-            arm_motors.at(0).move_voltage(-speed * (12000.0 / 127));
+            util.move_arm_motors(-speed * (12000.0 / 127));
             pros::delay(time * 1000);
-            arm_motors.at(0).move_voltage(0);
+            util.move_arm_motors(0);
+            arm_motors.at(0).brake();
             break;
         case direction::DOWN:
             std::cout << "Moving arm down" << std::endl;
-            arm_motors.at(0).move_voltage(speed * (12000.0 / 127));
+            util.move_arm_motors(speed * (12000.0 / 127));
             pros::delay(time * 1000);
-            arm_motors.at(0).move_voltage(0);
+            util.move_arm_motors(0);
+            arm_motors.at(0).brake();
             break;
         default:
             std::cout << "Unknown direction." << std::endl;

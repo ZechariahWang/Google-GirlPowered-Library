@@ -24,7 +24,11 @@ void GirlPowered::Utility::move_right_motors(double voltage){
 
 void GirlPowered::Utility::move_arm_motors(double voltage){
   for (auto i : arm_motors) {
-    i.move_voltage(voltage);
+    if (voltage == 0) {
+      i.brake();
+    } else {
+      i.move_voltage(voltage);
+    }
   }
 }
 
