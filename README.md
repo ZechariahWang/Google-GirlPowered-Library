@@ -8,7 +8,7 @@ Hosted in collaboration with the University of Calgary and sponsored by Google.
 
 ![AP1GczNGotM0UhO0xaOZLrvxNXQyN-Hzy0_iTRaHIORnx0eab_SKknwSX6z_sI9lxukuaq7-WrDDUoSvhHYlCw2KUUp6kGsTutLdRc310P2yv9IGMByZyI7bfmTrIhX_irYpGb6lrc9d07FTnMz8H183xOAUw1415-h945-s-no-gm](https://github.com/user-attachments/assets/d4c44a2b-f699-4288-8f80-24efa6a79cae)
 
-![AP1GczNGotM0UhO0xaOZLrvxNXQyN-Hzy0_iTRaHIORnx0eab_SKknwSX6z_sI9lxukuaq7-WrDDUoSvhHYlCw2KUUp6kGsTutLdRc310P2yv9IGMByZyI7bfmTrIhX_irYpGb6lrc9d07FTnMz8H183xOAUw1415-h945-s-no-gm](https://github.com/user-attachments/assets/bdb4fc67-b83f-4f25-80f8-3399b466bd38)
+![AP1GczNirWzFzWb0ysqueiMItj7CTXC8YDfUF6I0xHBdm5z6EUZ2F8LdONZdslg7nTaH_S368yyaJ7hXuCT3Xf_PnTsa26rKecdcvIVxpQUxwaOCdtesWyHhbl9w994sY332DzRZQ20m85wxZmnSXxowBmcMw1415-h945-s-no-gm](https://github.com/user-attachments/assets/328ce2fd-ee3f-40ac-ab8c-20abffda0f4d)
 
 ## Authors
 
